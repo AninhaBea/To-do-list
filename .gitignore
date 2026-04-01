@@ -1,0 +1,33 @@
+# Ambiente Virtual
+venv/
+env/
+ENV/
+.venv
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Arquivo de cache
+.pytest_cache/
+.coverage
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de configuração local
+.flaskenv.local
+.env.local
+
+# Arquivos temporários
+*.tmp
+*.bak

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<header style="background: #eee; padding: 10px;">
+    <a href="/">Início</a>
+    <a href="/usuarios">Usuários</a>
+    <a href="/tarefas">Tarefas</a>
+</header>
+<body>
+    <h1>Tarefas</h1>
+    <h2>Cadastro de nova tarefa:</h2>
+    <form method="post" action="/tarefas">
+        <input type="text" name="tarefa" placeholder="Descrição da tarefa" required>
+        <select name="responsavel" required>
+            {% for user in users %}
+                {% if user['tipo'] == 'aluno' %}
+                    <option value="{{ user['nome'] }}">{{ user['nome'] }}</option>
+                {% endif %}
+            {% endfor %}
+        </select>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+    <h2>Lista de tarefas cadastradas:</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Descrição</th>
+            <th>Responsável</th>
+            <th>Situação</th>
+        </tr>
+        {% for tarefa in tarefas %}
+        <tr>
+            <td>{{ tarefa['tarefa'] }}</td>
+            <td>{{ tarefa['responsavel'] }}</td>
+            <td>{{ tarefa['situacao'] }}</td>
+        </tr>
+        {% endfor %}
+</body>
+</html>
+</body>
+</html>
