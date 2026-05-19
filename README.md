@@ -24,7 +24,6 @@ Um sistema simples de gerenciamento de tarefas no qual os professores/administra
 
 | Tipo | Usuário | Senha |
 |------|---------|-------|
-| Admin | Kodland | python |
 | Admin | admin | admin |
 | Aluno | aluno1 | 123 |
 | Aluno | aluno2 | 321 |
