@@ -1,4 +1,4 @@
-# To-do-list Kodland
+# To-do-list
 
 Um sistema simples de gerenciamento de tarefas no qual os professores/administradores conseguem gerenciar seus alunos e suas respectivas tarefas
 
